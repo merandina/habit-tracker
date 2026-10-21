@@ -1,5 +1,3 @@
-# habit-tracker
-A productivity and habit-tracking web application built with HTML, CSS, and JavaScript.
 # Habit Tracker
 
 A simple, interactive habit tracker built with HTML, CSS, and JavaScript. Track daily habits, organize them by category, and monitor your progress through a clean, dark-themed interface.
