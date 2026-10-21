@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <p class="eyebrow">YOUR PERSONAL SPACE</p>
+      <h1>Habit Tracker<span>.</span></h1>
+      <p class="subtitle">Small steps. Consistent progress.</p>
+    </header>
+
+    <section class="progress-card">
+      <div class="progress-heading">
+        <div>
+          <p class="eyebrow">YOUR DAILY PROGRESS</p>
+          <h2 id="progress-text">0 of 3 completed</h2>
+        </div>
+        <span id="progress-percent">0%</span>
+      </div>
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </section>
+
+    <section class="habits-section">
+      <h2>Today's habits</h2>
+      <div id="habit-list" class="habit-list">
+        <label class="habit">
+          <input type="checkbox">
+          <span class="habit-name">Drink enough water</span>
+          <span class="habit-tag">HEALTH</span>
+        </label>
+
+        <label class="habit">
+          <input type="checkbox">
+          <span class="habit-name">Read or learn for 30 minutes</span>
+          <span class="habit-tag">GROWTH</span>
+        </label>
+
+        <label class="habit">
+          <input type="checkbox">
+          <span class="habit-name">Move your body</span>
+          <span class="habit-tag">FITNESS</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="add-section">
+      <h2>Create a habit</h2>
+      <form id="habit-form">
+        <input
+          id="habit-input"
+          type="text"
+          placeholder="e.g. Practice coding"
+          maxlength="60"
+          required
+        >
+        <select id="habit-category">
+  <option value="PERSONAL">Personal</option>
+  <option value="HEALTH">Health</option>
+  <option value="STUDY">Study</option>
+</select>
+        <button type="submit">Add habit +</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Progress over perfection.</p>
+    </footer>
+  </main>
+</body>
+</html>
